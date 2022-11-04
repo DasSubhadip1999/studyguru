@@ -1,0 +1,450 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+body {
+    width: 98vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container {
+    width: 94%;
+    height: 93%;
+    position: relative;
+}
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #845bdcdd;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+.profile {
+    position: absolute;
+    left: 13px;
+    top: 65px;
+    width: 12%;
+    display: flex;
+    align-items: center;
+}
+.profile .name {
+    color: white;
+    text-transform: lowercase;
+}
+.profile .icon {
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    margin-right: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #845bdcdd;
+}
+.setting {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    width: 18%;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.setting-items {
+    position: relative;
+}
+.fa-right-from-bracket:hover ~ .logout-hover{
+    display: block;
+}
+.logout-hover {
+    display: none;
+    width: 64px;
+    font-size: 13px;
+    position: absolute;
+    left: -20px;
+    bottom: -26px;
+    text-align: center;
+    padding: 2px 0;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.setting-items i {
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+}
+.sidebar {
+    width: 13%;
+    height: calc(83% - 4px);
+    background-color: #f1f1f1;
+    border-radius: 0 0 0 5px;
+}
+.class-heading {
+    position: relative;
+}
+.class-heading i {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.567);
+}
+.class-heading h4 {
+    font-size: 16px;
+    margin-left: 50px;
+    padding: 10px 0;
+    color: rgba(0, 0, 0, 0.652);
+}
+.classes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+.classes > div {
+    position: absolute;
+    left: 30px;
+    top: 9px;
+    font-size: 13px;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    color: white;
+    padding: 3px;
+}
+.bi {
+    background-color: #00d996;
+}
+.en {
+    background-color: #00d9d5;
+}
+.hi {
+    background-color: #bc4932;
+}
+.ma {
+    background-color: #00b1e0;
+}
+.classes p {
+    margin-left: 64px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.659);
+}
+.sidebar hr {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.374);
+}
+.controls {
+    width: 100%;
+    display: flex;
+    padding: 8px 0;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.controls i {
+    width: 25%;
+    font-size: 18px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.233);
+}
+.controls p {
+    width: 75%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+section {
+    position: absolute;
+    top:6%;
+    left: 13%;
+    width: 57%;
+    min-height: 93%;
+    max-height: 93%;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.2);
+}
+section .menubar {
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 6px;
+}
+.menubar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menubar ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+.selected .lg {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    color: white;
+    padding: 3px;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 6px;
+    background-color: #00b1e0;
+}
+.lg.not-selected {
+    display: none;
+}
+.selected {
+    position: relative;
+}
+.selected>div:nth-child(2) {
+    font-size: 18px;
+    color: #845bdcdd;
+    font-weight: bold;
+}
+.selected::after {
+    position: absolute;
+    bottom: -23px;
+    left: -22px;
+    content: "";
+    height: 4px;
+    width: 130%;
+    background-color: #845bdcdd;
+}
+.about {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+    background-color: #fafafa;
+}
+.about i {
+    cursor: pointer;
+    transition: 0.5s;
+}
+.about .fa-angle-up.rotate {
+    transform: rotate(180deg);
+}
+.subject-details {
+    width: 100%;
+    padding: 6px 8px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    transition: 0.5s;
+}
+.subject-details.hide {
+    display: none;
+}
+
+.subject-details > div {
+    padding: 8px;
+}
+.img-container img {
+    width: 140px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.para {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.teacher {
+    margin: 5px;
+    border-left: 1px solid rgba(0, 0, 0, 0.274);
+}
+.teacher-profile, .phn, .t-email {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 7px 6px;
+    align-items: center;
+}
+.teacher > div > i {
+    margin-right: 6px;
+    color: rgba(0, 0, 0, 0.627);
+}
+
+.dp {
+    width: 45px;
+    height: 45px;
+    background-color: #845bdcdd;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 20px;
+}
+.name-sub {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.t-name {
+    font-size: 18px;
+}
+.sub {
+    font-size: 15px;
+    margin-top: 3px;
+}
+.phn p{
+    font-size: 14px;
+    color: #845bdcdd;
+}
+.t-email p {
+    font-size: 14px;
+    color: #845bdcdd;
+}
+.t-notice {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.788);
+    padding: 4px 2px;
+}
+
+.assignments {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+    background-color: #fafafa;
+}
+.assignments-details {
+    width: 100%;
+    max-height: 215px;
+    overflow-y: auto;
+    padding: 6px;
+}
+.assignments-details.height {
+    max-height: 447px;
+}
+.chapters {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    margin: 10px 0;
+    display: flex;
+    padding: 10px 8px;
+}
+.chapter-icon img {
+    width: 145px;
+    height: 105px;
+}
+.main-chapter-body {
+    width: 50%;
+    padding: 2px 40px;
+    cursor: pointer;
+}
+.main-chapter-body p {
+    margin-top: 4px;
+}
+.main-chapter-body .delete {
+    margin: 13px 0;
+    min-width: 60px;
+    min-height: 28px;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.date-comment {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+.date-comment p {
+    width: 100%;
+    text-align: right;
+}
+
+article {
+    position: absolute;
+    right: 0;
+    top:22%;
+    max-height: 600px;
+    width: 28%;
+}
+article h3 {
+    width: 100%;
+    background-color: #845bdcdd;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.as-form {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+}
+.as-form form > div {
+    padding: 10px 0;
+}
+.as-form form > div > input {
+    width: 100%;
+    min-height: 30px;
+    margin: 8px 0;
+    padding: 8px 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.386);
+}
+.subject {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subject select {
+    width: 35%;
+    font-size: 17px;
+    text-align: left;
+    padding: 3px 4px;
+    outline: none;
+    cursor: pointer;
+}
+.subject select option {
+    padding: 3px 0;
+    text-align: left;
+}
+
+
+#subBtn {
+    width: 100%;
+    min-height: 30px;
+    margin: 8px 0;
+    padding: 8px 10px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #845bdcdd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 5% 12%;
+    background-color: #d2d0dd;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+header{
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    width: 10%;
+    height: 5%;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+header span:nth-child(1) {
+    color: #7f56da;
+}
+.container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+.form-container {
+    width: 50%;
+    background-color: #f3f5f9;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+.form-details {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 70%;
+}
+.user {
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 3px;
+}
+.catagory {
+    margin-right: 3px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.695);
+}
+.user > div:nth-child(2), .user > div:nth-child(3) {
+    text-align: center;
+    padding: 7px 0;
+    color: rgba(0, 0, 0, 0.573);
+    border-radius: 5px;
+}
+.user > div:nth-child(2):hover, .user > div:nth-child(3):hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.user + h1 {
+    font-size: 22px;
+    padding: 8px 0;
+}
+.user + h1 + p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.778);
+}
+.form-wrapper {
+    margin: 10px 0;
+}
+.form-wrapper form {
+    width: 100%;
+    height: 100%;
+}
+.form-wrapper form > div {
+    margin: 5px 0;
+}
+.form-wrapper form > div label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.78);
+}
+.form-wrapper input {
+    width: 100%;
+    padding: 7px 12px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.289);
+    border-radius: 4px;
+    margin: 2px 0;
+    font-size: 15px;
+}
+
+.password {
+    position: relative;
+}
+.password i {
+    cursor: pointer;
+    position: absolute;
+    top: 34px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.505);
+}
+.password i:hover {
+    color: rgba(0, 0, 0, 0.737);
+}
+.fa-eye.showpass {
+    color: black;
+}
+.forgot-password {
+    display: flex;
+    font-size: 13px;
+    padding: 5px 0;
+}
+.forgot-password .checkbox {
+    width: 65%;
+}
+.checkbox + p {
+    color: #8770be;
+    cursor: pointer;
+}
+.button {
+    margin: 15px 0;
+}
+.button button {
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    color: white;
+    background-color: #7f56da;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.google {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.64);
+    cursor: pointer;
+
+}
+.google:hover {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.542);
+}
+.google i {
+    margin: 0 5px;
+    font-size: 20px;
+    color: black;
+}
+.dont-have-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 13px;
+    margin: 10px;
+}
+.dont-have-account a {
+    margin: 0 4px;
+    color: #8770be;
+    text-decoration: none;
+    font-size: 14px;
+}
+.dont-have-account a:hover {
+    color: #5d1ee6;
+    font-weight: bold;
+}
+.vector-art {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+.vector-art img {
+    width: 85%;
+    height: 70%;
+}
+footer {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+footer a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+.copywright {
+    position: absolute;
+    bottom: 4px;
+    color: rgba(0, 0, 0, 0.686);
+    font-size: 11px;
+    letter-spacing: 2px;
+}

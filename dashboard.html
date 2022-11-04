@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Media/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Media/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Media/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Media/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="Media/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Open+Sans&family=PT+Serif&family=Rubik&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f724637ece.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <div class="icon"></div>
+                <div class="name"></div>
+            </div>
+            <div class="setting">
+                <div class="setting-items">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="setting-items">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="setting-items">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="setting-items">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="setting-items">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <div class="logout-hover">Log out</div>
+                </div>
+            </div>
+        </header>
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="class-heading">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h4>My Classes</h4>
+            </div>
+            <div class="classes">
+                <div class="bi">Bi</div>
+                <p>Biology</p>
+            </div>
+            <div class="classes">
+                <div class="en">En</div>
+                <p>English</p>
+            </div>
+            <div class="classes">
+                <div class="hi">Hi</div>
+                <p>History</p>
+            </div>
+            <div class="classes">
+                <div class="ma">Ma</div>
+                <p>Maths</p>
+            </div>
+            <hr>
+            <div class="message controls">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Messages</p>
+            </div>
+            <div class="notification controls">
+                <i class="fa-solid fa-bell"></i>
+                <p>Notification</p>
+            </div>
+            <div class="files controls">
+                <i class="fa-solid fa-folder"></i>
+                <p>My Files</p>
+            </div>
+            <div class="calender controls">
+                <i class="fa-solid fa-calendar-day"></i>
+                <p>Calender</p>
+            </div>
+            <div class="hidemenu controls">
+                <i class="fa-solid fa-angle-left"></i>
+                <p>Hide menu</p>
+            </div>
+        </div>
+        <!-- main body -->
+        <section>
+            <div class="menubar">
+                <ul>
+                    <li class="selected">
+                        <div class="lg">Ma</div>
+                        <div>Mathematics</div>
+                    </li>
+                    <li>
+                        <div class="lg not-selected">As</div>
+                        <div>Assignments</div>
+                    </li>
+                    <li>
+                        <div class="lg not-selected">St</div>
+                        <div>Students</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about">
+                <div>About Subject</div>
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="subject-details">
+                <div class="img-container">
+                    <img src="Media/maths.png" alt="">
+                </div>
+                <div class="para">
+                    In contemporary education, mathematics education is the practice of teaching and learning mathematics, along with the associated scholarly research.Researchers in mathematics education are primarily concerned with the tools, methods and 
+                </div>
+                <div class="teacher">
+                    <div class="teacher-profile">
+                        <div class="dp">M</div>
+                        <div class="name-sub">
+                            <div class="t-name">Mina Morgan</div>
+                            <div class="sub">Math Teacher</div>
+                        </div>
+                    </div>
+                    <div class="phn">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>654-321-678</p>
+                    </div>
+                    <div class="t-email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>minamorgan@gmail.com</p>
+                    </div>
+                    <div class="t-notice">
+                        <div class="date">19.08.2022</div>
+                        <p>Don't forget to bring summer assignments tomorrow</p>
+                    </div>
+                </div>
+            </div>
+            <div class="assignments">
+                <div>Assignments (<span id="count">0</span>)</div>
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="assignments-details">
+                <!-- <div class="chapters">
+                    <div class="chapter-icon">
+                        <img src="Media/algebra.jpg" alt="">
+                    </div>
+                    <div class="main-chapter-body">
+                        <h4>Assignments for Algebra</h4>
+                        <p>After solving problems with addition and subsraction</p>
+                        <button class="delete">Delete</button>
+                    </div>
+                    <div class="date-comment">
+                        <p>30 Aug</p>
+                        <p>Comments(5)</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <article>
+            <h3>Create Assignment</h3>
+            <div class="as-form">
+                <form action="" id="form">
+                    <div class="subject">
+                        <label for="">Choose Subject:</label>
+                        <select name="" id="sub-type">
+                            <option value="Biology">Biology</option>
+                            <option value="English">English</option>
+                            <option value="History">History</option>
+                            <option value="Mathematics">Mathematics</option>
+                        </select>
+                    </div>
+                    <div class="as-heading">
+                        <label for="">Heading for Assignment</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="as-subheading">
+                        <label for="">Sub heading for Assignment</label><br>
+                        <input type="text">
+                    </div>
+                    <input type="submit" value="Create" id="subBtn">
+                </form>
+            </div>
+        </article>
+    </div>
+    <script src="./JS/dashboard.js"></script>
+</body>
+</html>
